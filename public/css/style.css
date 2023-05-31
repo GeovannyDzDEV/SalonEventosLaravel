@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Archivo', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.titulo-paquetes {
+  margin: 0;
+  text-align: center;
+  background-color: #efddac;
+  border-radius: 0 0 50px 50px;
+  width: 100%;
+  height: 50px;
+
+}
+
+.img-paquetes {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.logo {
+  width: 180px;
+  padding: 10px;
+}
+
+.contenido {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  height: 60px;
+  border: 2px solid #707170;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer p.footer-text {
+  text-align: right;
+  padding-right: 10px;
+}
+
+
+.presentacion {
+  background: url(https://www.vidanta.com/documents/34940/257206/bodas-banner.jpg/e5410766-4f94-1c88-260b-1b4086c59908?t=1562598785991);
+}
+
+.presentacion .btn {
+  background: transparent;
+  border: 2px solid white;
+  width: 180px;
+  color: white;
+  transition-duration: 0.8s;
+}
+
+.btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/*Tabla usuario*/
+
+.contenedor-tabla-usuarios {
+  padding: 20px;
+}
+
+.card-cuerpo {
+  margin: 20px auto;
+  max-width: 1300px;
+  padding: 10px;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  justify-content: center;
+}
+
+
+.contenedor-tabla-usuarios a {
+  text-decoration: none;
+  color: black;
+}
+
+.tabla-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: rgba(0, 0, 0, 0.3) solid 1px;
+}
+
+.tabla-usuarios thead {
+  background-color: #c5c2c2;
+}
+
+.tabla-usuarios th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+.table .update {
+  color: blue;
+}
+
+.table .delete {
+  background: none;
+  color: red;
+}
+
+
+/* form crear usuario */
+.contenedor-usuarios {
+  width: 100%;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contenedor-usuarios .contenedor-datos {
+  width: 80%;
+  height: 500px;
+}
+
+.contenedor-usuarios h1 {
+  background: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contenedor-usuarios .contenedor-input {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.contenedor-usuarios .central {
+  margin-top: 10px;
+}
+
+.contenedor-usuarios .nombre, .apellidos {
+  margin-top: 50PX;
+}
+
+.contenedor-usuarios input {
+  display: block;
+  width: 500px;
+  height: 35px;
+  border: #c5c2c2 solid 2px;
+  border-radius: 5px;
+}
+
+.contenedor-usuarios .contenedor-guardar {
+  display: flex;
+  margin-top: 20px;
+  background: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 50px;
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-usuarios .boton-guardar {
+  background: rgb(255, 255, 255);
+  width: 95%;
+}
+
+.contenedor-usuarios .boton-guardar:hover {
+  background: rgb(226, 224, 224);
+}
+
+
+/* Formulario global*/
+
+.contenedor-agregar {
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 20px;
+}
+
+.header-agregar {
+  background-color: #333;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenedor-agregar form {
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.contenedor-agregar label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.contenedor-agregar .element-lg {
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.radio {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.contenedor-agregar .imagen-file {
+  margin: 0px 20px;
+}
+
+.contenedor-form-img {
+  display: flex;
+  padding: 20px 0px;
+
+}
+
+@media screen and (max-width: 910px) {
+  .contenedor-agregar .contenedor-form-img {
+    flex-direction: column;
+  }
+
+  .contenedor-agregar .img-media {
+    width: 100%;
+  }
+
+  .contenedor-agregar .imagen-file {
+    margin: 0px;
+    padding-top: 20px;
+  }
+}
+
+
+
+.contenedor-agregar .imagen-t {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.contenedor-agregar img {
+  width: 500px;
+  height: 500px;
+}
+
+/* Aregar usuario css */
+.titulo-formulario-usuario {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.form-formulario-usuario {
+  background-color: #FFF;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-formulario-usuario label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-formulario-usuario input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Lista de paquetes css */
+
+.lista-paquetes {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 20px;
+}
+
+.header {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+.estado-label {
+  border: 1px dotted black;
+  border-radius: 90px;
+}
+
+.edit {
+  color: rgb(74, 208, 74);
+}
+
+.delete {
+  background: none;
+  border: none;
+  color: red;
+}
+
+/* Agregar evento css */
+.contenedor-evento-cliente {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #e0e1e1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-evento-cliente form {
+  width: 50%;
+  flex-direction: column;
+  background-color: #d0d1d3;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contenedor-evento-cliente header {
+  background-color: #363434;
+  width: 50%;
+  height: 80px;
+  color: white;
+  text-align: center;
+}
+
+.contenedor-evento-cliente header h1 {
+  display: inline-block;
+  padding: 22px;
+}
+
+.contenedor-evento-cliente div {
+  margin: 20px;
+  width: 90%;
+}
+
+.contenedor-evento-cliente label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contenedor-evento-cliente input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contenedor-evento-cliente button {
+  background-color: #393a3b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contenedor-evento-cliente button:hover {
+  background-color: #444546;
+}
+
+.costo-evento {
+  display: inline-block;
+  width: 200px;
+  position: relative;
+  left: 85%;
+  background-color: wheat;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.contenedor-radio1 {
+  display: flex;
+}
+
+.contenedor-radio2 {
+  padding: 20px;
+}
+
+.contrato-icon {
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.horas-c {
+  display: flex;
+}
+
+.horas-c p {
+  margin-right: 80px;
+}
+
+
+.cuerpo-errores {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensajes-error {
+  font-size: 40px;
+}
+
+.abono-boton {
+  background-color: rgb(27, 142, 180);
+  padding: 7px;
+  border-radius: 10px;
+  color: #fff;
+
+}
+
+.abono-boton:hover {
+  transform: translateY(2px);
+  text-decoration: none;
+  color: white;
+}
+
+/* Abonos */
+
+.body-abono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7b7a80;
+}
+
+.card-abono {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e1e1e1;
+}
+
+.titulo-abono {
+  text-align: center;
+  margin: 10px;
+}
+
+.card-texto-abono {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+}
+
+.card-texto-abono p {
+  margin: 20px 0;
+}
+
+.card-texto-abono h5,
+.card-texto-abono input {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card-texto-abono input {
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.card-texto-abono .boton-transferir {
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  color: #000000;
+  font-weight: bold;
+  border-width: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(227, 227, 18);
+  transition: all 0.1s ease-out;
+}
+
+.card-texto-abono .boton-transferir:hover {
+   transform: translateY(2px);
+}
+
+.card-texto-abono .fas {
+  padding-left: 3px;
+}
+
+
+/* Correo */
+
+.body-mensaje{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-mensaje{
+  background: #e1e1e1;
+  padding: 20px;
+  max-width: 500px;
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.main-mensaje h1{
+  text-align: center;
+}
+
+.main-mensaje p{
+  margin-top: 30px;
+}
+
+.main-mensaje a{
+  background: rgb(0, 149, 255);
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 36%;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-mensaje a:hover{
+  transform: translateY(3px);
+}
+
+
+
+
